@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelinha dos conectivos e seus usos/ataques</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    tr:hover {
+      background-color: #f1f1f1;
+    } 
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Conectivo</th>
+        <th>Dados</th>
+        <th>Alvo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>P ∧ Q</td>
+        <td>Sendo h : P ∧ Q, h.l = P e h.r = Q, logo ganhamos P e Q nos dados.</td>
+        <td>Separar a demonstração em duas partes, com cada parte tendo um dos lados como alvo, tendo todos os dados prévios.</td>
+      </tr>
+      <tr>
+        <td>P ∨ Q</td>
+        <td>Dois novos “jogos” são criados onde todos os dados/alvos atuais são copiados e colados em cada um, só que no primeiro temos o P como dado extra, e no segundo temos o Q. Precisamos «fechar» ambos! Cuidado: cada joguinho tem seu próprio escopo, então mudanças/efeitos que linhas de demonstração têm nos dados/alvos executados no primeiro caso, não vão afetar o segundo.</td>
+        <td>Escolher um dos lados para demonstrar, que se torna o novo alvo.</td>
+      </tr>
+      <tr>
+        <td>P ⇒ Q</td>
+        <td>Dado P nos dados, podemos conseguir Q.</td>
+        <td>O P é ganho nos dados, e o alvo vira Q.</td>
+      </tr>
+      <tr>
+        <td>A ⇔ B</td>
+        <td>Substituimos objetos iguais por iguais citando a igualdade, e proposições equivalentes por equivalentes citando a equivalência.</td>
+        <td>Se traduz na conjunção: (P ⇒ Q) & (Q ⇒ P)</td>
+      </tr>
+      <tr>
+        <td>(∀ x : A)[ϕ(x)]</td>
+        <td>Basta aplicá-la em qualquer objeto a : A e ela fornece o novo dado φ(a).</td>
+        <td>Basta solicitar um arbitrário objeto a : A, e o alvo se torna demonstrar ϕ(a).</td>
+      </tr>
+    </tbody>
+      <tr>
+        <td>(∃ x : A)[ϕ(x)]</td>
+        <td>Podemos solicitar um a : A que tem a propriedade ϕ.</td>
+        <td>É necessário encontrar um objeto a : A, e o alvo se torna demonstrar ϕ(a).</td>
+      </tr>
+      <tr>
+        <td>s = t</td>
+        <td>Substituimos objetos iguais por iguais citando a igualdade, e proposições equivalentes por equivalentes citando a equivalência.</td>
+        <td>Partindo do s, calcular usando substituições e chegar ou no próprio t, ou num termo intermediário k e partindo de t chegar no mesmo k.</td>
+      </tr>
+      <tr>
+        <td>¬P</td>
+        <td>A negação ¬P é a implicacão P⇒⊥</td>
+        <td>Se traduz na implicação: P ⇒ ⊥.</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
