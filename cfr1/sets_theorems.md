@@ -1,4 +1,4 @@
-```
+```lean
 θ.set_eq_eq := (∀A,B : Set α)(∀x : α)[(x ∈ A ⇔ x ∈ B) ⇔ A ⊆ B & B ⊆ A]
 Sejam A, B : Set α.
 Parte (∀A,B : Set α)(∀x : α)[(x ∈ A ⇔ x ∈ B) ⇒ A ⊆ B & B ⊆ A]
